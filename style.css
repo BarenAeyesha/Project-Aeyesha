@@ -167,7 +167,6 @@ p {
     padding: 0 12px;
   }
 
-  /* Recipes (tablet portrait / small screens) */
   .recipes-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -200,25 +199,28 @@ p {
 @media (max-width: 480px) {
   .navbar {
     height: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .navbar h1 {
     font-size: 26px;
   }
   .nav {
-    gap: 6px;
+    gap: 10px;
     padding-top: 8px;
   }
   .nav a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .images {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 16px;
   }
   .images img {
     height: auto;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
   .recipes-title {
@@ -226,8 +228,8 @@ p {
     padding-left: 6px;
   }
   .recipes-grid div img {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
   }
   .bp {
     font-size: 18px;
@@ -242,3 +244,4 @@ p {
   }
 
 }
+
