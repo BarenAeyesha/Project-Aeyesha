@@ -207,7 +207,6 @@ p {
     font-size: 26px;
   }
   .nav {
-    flex-direction: column;
     gap: 6px;
     padding-top: 8px;
   }
@@ -222,13 +221,13 @@ p {
     height: auto;
   }
 
-  /* Recipes (mobile) */
   .recipes-title {
     font-size: 22px;
     padding-left: 6px;
   }
   .recipes-grid div img {
-    height: auto;
+    width: 125px;
+    height: 125px;
   }
   .bp {
     font-size: 18px;
@@ -237,8 +236,9 @@ p {
     font-size: 14px;
   }
   .button {
-    width: 100px;
+    width: 40px;
     padding: 10px;
     font-size: 16px;
   }
+
 }
