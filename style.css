@@ -54,7 +54,7 @@ p {
     text-align: center;
 }
 
-/* Page 2 */
+
 .recipes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,6 +265,9 @@ p {
 
 .btn-custom:hover {
     background-color: #d18be0;
+}
+{
+
 }
 
 
