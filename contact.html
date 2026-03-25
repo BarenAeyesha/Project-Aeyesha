@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavorful Journey - Contact</title>
-
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Flavorful Journey - About & Contact</title>
 
     
     <link rel="stylesheet" href="style.css">
@@ -14,60 +11,58 @@
 
 <body>
 
-<header>
-    <div class="navbar">
-        <h1>Flavorful Journey</h1>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="contact.html"><u>About & Contact</u></a>
-        </nav>
-    </div>
+
+<header class="header">
+    <h1>Flavorful Journey</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#" class="active">About & Contact</a>
+    </nav>
 </header>
 
-<main class="container mt-4 mb-5">
 
-   
-    <div class="text-center mb-5">
-        <h2 class="title">About Us</h2>
+<main class="main-container">
+
+    <div class="card-box">
+
+        <h2>About this site</h2>
         <p>
-            Flavorful Journey is all about simple, affordable, and delicious recipes 
-            that anyone can make at home. Perfect for students and families who want 
-            quick meals without stress.
+            This website is about sharing easy, budget-friendly, and delicious recipes
+            for students and families. It features cooking tips, step-by-step instructions,
+            and meal ideas that anyone can try at home — created to make cooking approachable and fun.
         </p>
-    </div>
 
-    
-    <div class="contact-box mx-auto">
-        <h2 class="title text-center">Contact Us</h2>
+        <h2>Why we made this</h2>
+        <p>
+            To help learners and busy families prepare simple meals with limited ingredients,
+            low cost, and minimal time.
+        </p>
+
+        <h2>Creator</h2>
+        <p>
+            Aeyesha Mae T. Baren — student & home cook who loves easy recipes
+            that fit student budgets and schedules.
+        </p>
+
+        <h2>Contact / Suggestions</h2>
 
         <form>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" required>
-            </div>
+            <label>Name:</label>
+            <input type="text" required>
 
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Your Email" required>
-            </div>
+            <label>Email:</label>
+            <input type="email" required>
 
-            <div class="mb-3">
-                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-            </div>
+            <label>Message:</label>
+            <textarea rows="4" required></textarea>
 
-            <div class="text-center">
-                <button type="submit" class="btn btn-custom">Send Message</button>
-            </div>
+            <button type="submit">Send</button>
         </form>
 
-       
-        <div class="text-center mt-4">
-            <p>Email: flavorfuljourney@email.com</p>
-            <p>Location: Philippines</p>
-        </div>
     </div>
 
 </main>
 
 </body>
 </html>
-
