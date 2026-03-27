@@ -1,132 +1,172 @@
-* {margin: 0; padding: 0;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-main {
+body {
+    background: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
-header {
-    font-family: 'Times New Roman', Times, serif;
-    position: sticky;
-    top: 0;
-}
 
 .navbar {
     background: #e2a9f1;
-    height: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
+    padding: 20px;
+}
+
+.navbar h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .nav {
     display: flex;
-    gap: 50px;
     justify-content: center;
-    padding-top: 30px;
+    gap: 40px;
 }
 
 .nav a {
-    color: black;
     text-decoration: none;
-    font-size: 24px;
+    color: black;
+    font-size: 22px;
 }
 
-.navbar h1 {
-    padding-top: 15px;
-    font-size: 48px;
+
+main {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-/* GENERAL TEXT */
+
 .title {
     text-align: center;
-    font-size: 40px;
-    margin: 20px;
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 20px;
+main p {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* CONTACT PAGE FIX */
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.recipes-section {
+    margin-bottom: 30px;
+}
+
+.recipes-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.recipes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.recipe-card img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bp {
+    font-size: 22px;
+}
+
+.bp2 {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.button {
+    margin-left: auto;
+    background: #e2a9f1;
+    padding: 8px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
 }
 
 .contact-box {
-    max-width: 450px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
 }
 
-/* FIX alignment (like mockup) */
-.contact-box h2,
+.contact-box h2 {
+    margin-top: 15px;
+}
+
 .contact-box p {
     text-align: left;
 }
 
-/* FORM */
 .contact-box input,
 .contact-box textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 8px 0;
+    background: #ddd;
     border: none;
-    background-color: #ddd;
     border-radius: 5px;
 }
 
-.contact-box label {
-    font-size: 14px;
-}
 
-/* BUTTON */
 .btn-custom {
-    background-color: #e2a9f1;
-    color: black;
+    background: #e2a9f1;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 18px;
     border: none;
 }
 
-.btn-custom:hover {
-    background-color: #d18be0;
-}
-
-/* CENTER BUTTON */
 .text-center {
     text-align: center;
 }
 
-/* RESPONSIVE (keep yours but cleaner) */
+
 @media (max-width: 768px) {
-  .nav {
-    gap: 20px;
-  }
+    .images {
+        grid-template-columns: 1fr;
+    }
 
-  .nav a {
-    font-size: 18px;
-  }
+    .navbar h1 {
+        font-size: 30px;
+    }
 
-  .navbar h1 {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 16px;
-  }
+    .nav {
+        gap: 20px;
+    }
 }
-
-
-
